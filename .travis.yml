@@ -1,6 +1,15 @@
-jdk:
-- oraclejdk8
-install:
-- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+dist: trusty
+jdk: openjdk-17
+language: java
+services:
+  - postgresql
+  - docker
+env:
+  global:
+    - COMMIT=${TRAVIS_COMMIT::7}
+
 script:
-- mvn test
+  - ./mvnw clean install -B
+
+
