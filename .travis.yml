@@ -11,25 +11,4 @@ before_install:
 services:
   - postgresql
   - docker
-    env:
-      global:
-    - secure: "NUTNs8jIG+3r7c60ybttKG8HEpdqNljoY42oYbI8g0EMr5qifncexHppgfGGUwX7AO+KTTEbeO/29qsldXRA7MDFnsHoWu5yeUEdVDNfmjBk6uCnY1To7Vz7+E8WeBzBRT9I7mh+Nzec9rnAQ4MEUE+q9tHHnV+vHRrVw94pjWa2svU5wKxyheuxIKIFdiqWSM8oT3N03i2JcwpZ+0QEHtdFmQgNM6P/o+bsQRolhTPnUwmoEqhccYBRjMaqdCdQH/iNdmzJWsO78IXvJXbkwyqMgYQUQuwm8UaMBcyWNBqGGTjfw6IwS4wcU+fou1dxa25niOlX0YM06mOln+Zo3yOJiVCREBI5yHF9Opk5VGqJJgVOi3vRhF7lNHewWTpMKmPWuAQ84eXZOxdxgeJL18mj2jajo1YHQj5JpUDlUQ1R0TaPWMJvVwu026ZCncge4Mym2HBx0ANO1u2BQHhyztVvoFp9Bm24z7ul462XF6KKWUNruy6MLQ9VxAAbSXwrk9lOttJPdnFRNzRfXUoWvb8d2befdmURt15hGX4NkGov3HD8Qgd0qA7vDcBCv+UrIU0NYA3f34dbhyZjxAUSqWUlN7IsnGofUChZd2xAvw+8ggEVB9AHJADQ0xHaUVNlm2jnL4kYdfjvfjg7glEUjADb82iUQQD0UVdd/mz/AdE="
-    - secure: "QxIUHbpSv00f+JdKSSreEyglQGZEeRunvU2R2Zwxq+Ce/IyZ9wF013S/v5aIyJqVkaf8vOep8rJFALblcixumGC3easZN2xUNa9TzhYxH1Pp0/2AczlLeH6kCvRQvNLCfRa54jXrLg4ZMlZ9mozH0wuXV+f1OkvBolmf2onntWWjFPCiLEt8dX8aSVLjcqwwMG+dM3MoQciYtEgeFppsB0eHQvNFDh7x/3dGudRWcQaqWd5xF82BmIfcF1LgM5KpzolX0h7cmBxLJIv+GmE1Hw044ZRgkzLEuYr+3maJvG3qFaBYp8kAxQX3NKFR7haI9gxno5P7H4/9Y7VL9NLEveZWgiwWvXOLbM14fJiRywUXGYcDPXJzcwZi50HJSza1yKwEDoREzsO96T7mqcqHqjZavngbK+j1ObfyW4EL0MtK5vlla1n+a2HijvPyvJyjaffzrfX4Kppu3kdmnwX74abrI+/idI4E9ASF+ygx/KSKo2R6Q8vm5SbEGx/rXcLbPzwVDmnkJH5KJIXiTSzy7DZZs3KFfx4Q0n1Y5957jEC8TXDOnGmmQswEbalQYcI49JR3UJnNDbuvFRvDy41PZfPYrlrjjbxJj86qrcTOS6Hyg1iPIOgcnItRxw2rjgliHhNkkNVnz5Ff17Pyi0k9+8VvJZBlyhE9kF0Ja7A6Qcw="
-    - secure: "ea1lLRy8g+YmGyYL6NOIgiNZrCC/9N0ozqfcxEVqbxHC7n7mkshF57YWNJFVX0I0udYOyifKf/YxndfzqCBKKXw+VjQG8TV4Ww+qi806PBkgs7eNI+IKyuQ3Hq2bpwzvnXr0f7Iu2kGQIHEutiJlTM1mo/Up8USPlPyhwJk5CK7Ms5dGez4m0BBM4zilV0gzUs0QwlSBL8TUk4RFlpNCufDnERKMyd13yqfyMkCXjJU30aihCfPHYrmgKbjv/bYdYrlE+gO+c1t/n0DnQL9LRBKc8kbElB1a1Bqkz6gWabFLw/tXhnqOUhHtCObtzUA1NMM9sce0uA2MErwCX24F5KDgYW8WgH8f1XwyXozf10KV+gKWlV1+AunqiufFJ/3FLnlTzWuu2/Zu6OgYBAGp3AofPcgo08akgrjEZCfBfuv8cAm16hooq//w+22CyolOSh0hExhnl9h8bCRznJsyY8bZ/47W4hrGL+SpS5lZG6wULGJTH0ezt3Ts+5z9w6T+wWUMJG8OCLVE/qqC0B+Ldp06aXHWs2dvpIURGjkOZreO4MnXN2VUCzYHHG3Fj8Lbm9MG5bg/KCrnpB/Mgx2VtuLCE9LN1WhiT2HOWWZNqpAiTu1fBZXCtI1Gqybs5SNcwhvglZ+wa/JNuhIfMOj38uX7nGh2S78sd4LJgx7x2dk="
-    - COMMIT=${TRAVIS_COMMIT::7}
-    script:
-      - ./mvnw clean install -B
-    
-    after_success:
-      - docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo "$TRAVIS_BRANCH"; fi`
-      - export IMAGE_NAME=pus-repository
-      - docker build -t $IMAGE_NAME:latest .
-      - docker tag $IMAGE_NAME:latest $IMAGE_NAME:$TAG
-      - docker push $IMAGE_NAME:$TAG
-    
-    deploy:
-      provider: heroku
-      api_key: $HEROKU_API_KEY
-      app: simpleapi-pus
 
