@@ -8,3 +8,6 @@ addons:
       - oracle-java8-installer
 before_install:
   - chmod +x mvnw
+services:
+  - postgresql
+  - docker
