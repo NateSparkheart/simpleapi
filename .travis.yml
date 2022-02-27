@@ -1,9 +1,16 @@
+language: java
+sudo: true
 dist: trusty
-    jdk: oraclejdk8
-    language: java
-    services:
-      - postgresql
-      - docker
+jdk: oraclejdk8
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
+before_install:
+  - chmod +x mvnw
+services:
+  - postgresql
+  - docker
     env:
       global:
     - secure: "NUTNs8jIG+3r7c60ybttKG8HEpdqNljoY42oYbI8g0EMr5qifncexHppgfGGUwX7AO+KTTEbeO/29qsldXRA7MDFnsHoWu5yeUEdVDNfmjBk6uCnY1To7Vz7+E8WeBzBRT9I7mh+Nzec9rnAQ4MEUE+q9tHHnV+vHRrVw94pjWa2svU5wKxyheuxIKIFdiqWSM8oT3N03i2JcwpZ+0QEHtdFmQgNM6P/o+bsQRolhTPnUwmoEqhccYBRjMaqdCdQH/iNdmzJWsO78IXvJXbkwyqMgYQUQuwm8UaMBcyWNBqGGTjfw6IwS4wcU+fou1dxa25niOlX0YM06mOln+Zo3yOJiVCREBI5yHF9Opk5VGqJJgVOi3vRhF7lNHewWTpMKmPWuAQ84eXZOxdxgeJL18mj2jajo1YHQj5JpUDlUQ1R0TaPWMJvVwu026ZCncge4Mym2HBx0ANO1u2BQHhyztVvoFp9Bm24z7ul462XF6KKWUNruy6MLQ9VxAAbSXwrk9lOttJPdnFRNzRfXUoWvb8d2befdmURt15hGX4NkGov3HD8Qgd0qA7vDcBCv+UrIU0NYA3f34dbhyZjxAUSqWUlN7IsnGofUChZd2xAvw+8ggEVB9AHJADQ0xHaUVNlm2jnL4kYdfjvfjg7glEUjADb82iUQQD0UVdd/mz/AdE="
