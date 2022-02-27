@@ -1,6 +1,10 @@
+language: java
+sudo: true
 dist: trusty
 jdk: oraclejdk8
-language: java
-services:
-  - postgresql
-  - docker
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
+before_install:
+  - chmod +x mvnw
