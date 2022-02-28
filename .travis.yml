@@ -8,7 +8,7 @@ services:
   - docker
 env:
     global:
-        - secure: "Tb+sd7LBnagMzf5ioDh9vd4tPLBfuNwaXnHHqYJwaYVHJyx9mK6XkisajoaaP9rXuo6KpIhTGRyN0wBCPaFBNNRMtakijQgtWlEhDExXSBwRPl3l1i6wtkxOhJqxLd3MJAvmsK6wH6yVWiPdV/ljccxNI7TtQX3v5b9C0W0kbmUmdcT23Nvenk99rern3VR/H9U2KQ9IrS9xPwdBfhGEfWM1iNsGHXRmP840eEhK+ozViIDLa+rzOsb51+CLUdTmH3tLYBUqYxyr+2/KTWKy/7wYNwEtWMDLYwiivm/fRBVctGw7yddzZiMSoqoNtqfTonAQEfDoFab125/iOvToyBsmx5+aQJz3d4+1WgVg5g3yZU0Z3mGNJYEef+QaugEZBSnTteBkcBV3WMcXwc/o8oJDrWI7xNCZBhy1K7Djc+JoguoSXOSS+EJbeUQ3ZTnqO5ftojtRDq27LiRUlAZ59qvgeUVDnk5BBrgKtIcXFTzYlHim7AzdfrI6lLLSWfW52lX24m7KQhXNUVYQWMrI+fZz+xI2eSHk9oIa9Xi0OXM/hPDuLPzAVkTr05L03umXcBW8XwfdNgkU3CpTwQFvgxKfP6iBt9sBWKbxdrSic+cvrwT1RyUq+CKs/9g42lI9lce1xv+6S+VF03vboQhJtF7F+k7l8aLfJgPSdSBpA4c="
+        - secure: "nt271Bkm3FUf3gzUF73T+Rfxfq8fbMr0bENPjsTJIdh5cTuVgdrZg5YR9wi9Ej31o6P/2NgwNjORVtVVFPAz6Q/lM8eGhtirAUNsVEPcbOXBnCUfxs74/BuSs4SmICbfw0EctylIboAbmz52vm1Psw89ICyHUN0PPjGQuNOUpibmYOCGbULly+76tIDiJzvSplSsHUSO9u0vmmMAC8UvflnAX6Uzu7aml5xoEHCnZC+nOHoeICSvzJb6TzxY44tNwHt048xVa13s24NNtmCKhbHOd0i6chywTFXPxTzieQChXy2OcatblTnHSLEVax2LCxAW+KkmnQD+YAmiCCmf1ObTMM0Tzb5FR9sAtTP6mhkrW87Kgl7ZEI4UKVk44QFFRfdW1k/ZcxbhjWYktFl6OUCu5+WjuDARxeSqcGiwAF/Y9BVKra2ZuQ+o4p5i/zPGkTZmPhvbIdjQ5CylG9RReoAvxcZOX5kt66Qt6YSgTmVDDUxdmNwadt5BnIFwjEhq+2m61Fje3iHFn3fkn6muoyi3USAA9srqiyanTLWXN/xpoIY77083rJiDZQyzcAvk1kPJ5bzOZFsplBpydRl5i0SQTw/1gkAYDe9zVq7GPENN+7Eabo6B0TeW0EY7L0Al8sLaGxgtFswxUBmFAFwNjsZOIrklqlvp8WxOLPZtLVA="
         - secure: "omjcNXtXkRCbEkSyXJ4PbnJZiUbSr2PXcmOfjr6gwUGc17zd2khXxcBfQrq/ZDRLKMegteVk2H/E3UKrmwB7bSUFE3cwM5Py7KinJ4/ERoi/TxOX1f6O3nF6GAW+fgkCjBwSZTTySYT4XKqQLwFhC52ynrXIufrg5OeFbn7HvL/MOizoApcuClz7APCxljWwtunJIKMEoQEnPfVkHoNFqFZp8/NpJmyJNxQ3UEM4Gx2iTePrdJqnGET2EhlhH6kDPmEFHl6gTtkMiPihN0QoUuNDsgS4nIk0vhH/1tnVs8mrebLuForPva1mhqrKXB3SOjpYEXj6RWgMULxoxrmvo86Jb0Qiaemjv5r+bBSxZNN68hOU54iqeqx16+gh+MP5pXfn8C4dugtrMrYaZlJwyfC1dN/w4NW0ZSKN7cXbpSdR6ZOj1njXCWItie/OJ3YJtR67hvhG6wEYgobPuOJ/uWWq8gFqbTjBt1WBzMn+NWwVkkp59kPnAOH9MVsnftk38edG74pVIGUEyo/3h/2KzKGIyTGxsrl5vpXm1PPEUkUjXh/4JsqtiwnETL1M4jlADpz+opJFGcrPHHea0QvOGBEfeaalLX/c2ceFZaYZbGuq1syrKVakxUHNc/PiLkTYSL21xDvxhl12uSVCP7/qA21P0go0QabUGlgkidVY3XI="
         - secure: "RXBpsMkU6iHM/L2RbKuMDhgrJXQ633JFnLxBtlUgForsiJgXI92YtLDEe5pWJ8qOob6X37sWRVpycUpcUURNHhXXAsFPNYDKAAvdUCVq2GleLmtuaozCLTTYhV+a52ub5zuln50ci9o0eVQl5oQjFIXBDcqFiI8np/mR4UUsxP3In8djR6zI1w/3WfgZkGETNWAkFljROvYi27TQ22mPD9k6w0AkB+kf9gv072jd388zfZzn5tymJmJZXZrijeMa3E1+Om1/gk+ZPulMF4+qoxaDq9JoqoetYW16KlE8mwfs6aenF89q5j2RqXVsCf+k0qI3bi73Fh0d25KhbUApyBpBIDWPh5d1ECVampRf0ZnXQAJcppUsOuhaKB1mP1MNw1RtXDdd/PvUlgkcLEMP1tiohLhLCQvNcSy8gxC4ovbmyTNOH0oTQxDgCucL4ToUrxRJahubc7CD6cR9EFnqnk2OAhJlOTUi7R9YxcTWxFI8cnLSc3jw0np3jMj3mbhcJZ7UnD7BowpKCO9a/fM11ohfVjO6FCiEYKM86Kujw42v54Ro/j6F6HOWIbB5C/SlaOXJTHAi+PKUNeaIzFyK1j+92e5O9bEZ9Ph5vgJGI7JvlCbfmCRSmdNLI/mBZ9BQMIyfmz1Nn8S9hP39pgx5V7JrNFGmZUEgrOv8rW3MMoI="
         - COMMIT=${TRAVIS_COMMIT::7}
@@ -22,9 +22,9 @@ env:
       - export IMAGE_NAME=nsparky25/pus-repository
       - docker build -t $IMAGE_NAME:latest .
       - docker tag $IMAGE_NAME:latest $IMAGE_NAME:$TAG
-      - docker push $IMAGE_NAME:latest
+      - docker push $IMAGE_NAME:$TAG
       
     deploy:
-      provider: heroku
+      provider: Heroku
       api_key: $HEROKU_API_KEY
       app: simpleapi-pus
