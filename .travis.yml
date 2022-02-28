@@ -22,7 +22,7 @@ env:
       - export IMAGE_NAME=nsparky25/pus-repository
       - docker build -t $IMAGE_NAME:latest .
       - docker tag $IMAGE_NAME:latest $IMAGE_NAME:$TAG
-      - docker push $IMAGE_NAME:$TAG
+      - docker push $IMAGE_NAME:latest
       
     deploy:
       provider: heroku
